@@ -1,0 +1,25 @@
+{
+  "name": "phantomjs-demo",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ak1103dev/phantomjs-demo.git"
+  },
+  "keywords": [
+    "phantomjs"
+  ],
+  "author": "ak1103dev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ak1103dev/phantomjs-demo/issues"
+  },
+  "homepage": "https://github.com/ak1103dev/phantomjs-demo#readme",
+  "dependencies": {
+    "phantomjs": "^2.1.7"
+  }
+}
