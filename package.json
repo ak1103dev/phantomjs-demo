@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/ak1103dev/phantomjs-demo#readme",
   "dependencies": {
-    "phantomjs": "^2.1.7"
+    "phantomjs": "^2.1.7",
+    "phantomjs-prebuilt": "^2.1.14"
   }
 }

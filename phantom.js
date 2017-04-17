@@ -1,24 +1,18 @@
 var page = require('webpage').create();
 
-var settings = {
-  headers: {
-    Cookie: 'xxxxxxx'
-  }
-}
-
 page.open('https://www.google.com', function(status) {
-
+  phantom.addCookie({
+    'name'  : 'PHPSESSID',
+    'value' : 'xxxxxx',
+    'domain': 'ggg.com',
+    'path'  : '/'
+  });
   console.log("Status: " + status);
   if(status === "success") {
-    console.log('Content: ', page.content);
-    setTimeout(function(){
-      page.render('example.png');
-    }, 5000);
+    page.render('pics/example10.png');
+    console.log('cookie', JSON.stringify(phantom.cookies));
   }
-  // console.log('cookies', JSON.stringify(page.cookies));
-  setTimeout(function(){
-    phantom.exit();
-  }, 60000);
+  phantom.exit();
 });
 
 
