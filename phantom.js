@@ -1,6 +1,6 @@
-var page = require('webpage').create();
+const page = require('webpage').create();
 
-page.open('https://www.google.com', function(status) {
+page.open('https://www.google.com', function cb (status) {
   phantom.addCookie({
     'name'  : 'PHPSESSID',
     'value' : 'xxxxxx',
